@@ -4,6 +4,15 @@
 @import '../helpers/palette';
 
 $theme-dark: (
+  'severity': (
+    'base': $turquoise,
+    'critical': $hollywood-cerise,
+    'high': $monza,
+    'medium': $burnt-sienna,
+    'low': $ripe-lemon,
+    'ok': $turquoise,
+    'none': $white,
+  ),
   'button-primary': (
     'base': $aqua,
     'hover': $light-aqua,

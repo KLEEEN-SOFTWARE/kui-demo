@@ -7,3 +7,9 @@
 html {
   font-size: 62.5%;
 }
+
+body {
+  background-color: theme-color('layout','background-primary');
+  background-image: linear-gradient(135deg, theme-color('layout','background-primary') 0%, theme-color('layout', 'background-secondary') 75%);
+  height: 100vh;
+}
