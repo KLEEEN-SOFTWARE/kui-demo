@@ -12,16 +12,16 @@ import { KuiCardModel, KuiCardTemplate } from '@kleeen/dashboard';
       [kvEvents]="events">
     </kui-sparkline>
   </ng-template>
- 
+
   <ng-template #cards>
     <div>Net health card</div>
     </ng-template>
- 
+
   <ng-template #sheet1>
     <div>Net health sheet 1</div>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </ng-template>
-    
+
     <ng-template #sheet2>
     <div>Net health sheet 2</div>
     <kui-sparkline
