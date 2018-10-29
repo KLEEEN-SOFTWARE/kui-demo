@@ -1,0 +1,16 @@
+<div class="topnav">
+  <a routerLink="dashboard" routerLinkActive="active">{{'NAVBAR.HOME' | translate}}</a>
+  <a routerLink="table" routerLinkActive="active">{{'NAVBAR.TABLE' | translate}}</a>
+  <div>
+    <form>
+      <input type="radio" name="theme" value="light" (change)="onSelectionChange('light')"> {{'NAVBAR.LIGHT' | translate}}
+      <input type="radio" name="theme" value="dark" checked (change)="onSelectionChange('dark')"> {{'NAVBAR.DARK' | translate}}
+    </form>
+  </div>
+  <div>
+    <form>
+      <input type="radio" name="theme" value="light" checked (change)="onLanguageChange('en-initial')"> {{'NAVBAR.ENGLISH' | translate}}
+      <input type="radio" name="theme" value="dark" (change)="onLanguageChange('es')"> {{'NAVBAR.SPANISH' | translate}}
+    </form>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+@import '../../scss/helpers';
+
+.dashboard-demo {
+    background-color: $dark-forest;
+    background-image: linear-gradient(360deg, $dark-forest 0%, $green 45%);
+    height: 100vh;
+}

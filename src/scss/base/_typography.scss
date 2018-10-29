@@ -1,0 +1,7 @@
+$typography-list: helvetica, arial, 'sans-serif';
+
+@include define-typography(
+  (light, $typography-list, normal, $font-weight-light),
+    (regular, $typography-list, normal, $font-weight-regular),
+      (semi-bold, $typography-list, normal, $font-weight-semi-bold),
+        (bold, $typography-list, normal, $font-weight-bold));

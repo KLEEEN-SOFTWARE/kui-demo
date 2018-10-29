@@ -1,0 +1,10 @@
+{
+  "NAVBAR": {
+    "HOME": "Home",
+    "TABLE": "Table",
+    "ENGLISH": "English",
+    "SPANISH": "Spanish",
+    "DARK": "Dark",
+    "LIGHT": "Light"
+  }
+}

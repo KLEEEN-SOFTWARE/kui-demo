@@ -1,0 +1,271 @@
+@import '~@kleeen/style/helpers/palette';
+@import '~@kleeen/style/helpers';
+
+@import '../helpers/palette';
+
+$color-step: 30%;
+
+// TODO: Align KUIF theme colors for components to be standard
+$theme-dark: (
+  'primary': (
+    'base': $purple-heart,
+    'light': lighten($purple-heart, $color-step),
+    'lighter': lighten($purple-heart, $color-step*2),
+    'dark': darken($purple-heart, $color-step)
+  ),
+  'secondary': (
+    'base': $cornflower-blue,
+    'light': $malibu,
+    'dark': $fun-blue
+  ),
+  'accent': (
+    'base': $bright-turquoise,
+    'light': $melrose,
+    'dark': $black-pearl,
+    'transparent': rgba($black-pearl, $opacity-strong)
+  ),
+  'highlight': (
+    'base': $athens-gray,
+    'light': $ghost,
+    'lighter': $white,
+    'dark': $bombay,
+    'transparent': rgba($white, $opacity-strong)
+  ),
+  'severity': (
+    'base': $turquoise,
+    'critical': $hollywood-cerise,
+    'high': $monza,
+    'medium': $burnt-sienna,
+    'low': $ripe-lemon,
+    'ok': $turquoise,
+    'none': $white,
+  ),
+  'button-primary': (
+    'base': $green,
+    'hover': $dark-forest,
+    'active': $medium-purple,
+    'border': $green,
+    'hover-border': $dark-forest,
+    'text': $white,
+    'hover-text': $white,
+  ),
+  'button-secondary': (
+    'base': transparent,
+    'hover': rgba($green, .1),
+    'active': rgba($green, .2),
+    'border': $dark-forest,
+    'hover-border': $green,
+    'text': $dark-forest,
+    'hover-text': $green,
+  ),
+  'dashboard-card': (
+    'base': rgba($green, .8),
+    'backside': rgba($fog-green, .2),
+    'back-corner': $dark-forest,
+    'front-corner': $green,
+    'text': $gainsboro,
+    'divider': $dark-forest,
+    'dashboard-background': $dark-forest,
+    'shadow': rgba($dark-forest, .4),
+    'action-header': $dark-forest,
+    'action-header-color': $venom-green,
+    'action-header-title': $white,
+    'action-background-active': rgba($forest-green, .25),
+    'action-border-active': $forest-green,
+    'action-text-active': $gainsboro,
+    'dropping-background': $white,
+    'dropping-border': $black,
+    'details-text': $white,
+  ),
+  'checkbox-primary': (
+    'base': transparent,
+    'border': $ship-cove,
+    'checked-background': $cornflower-blue,
+    'checked-border': $cornflower-blue,
+    'check': $white,
+    'text': $black-pearl,
+    'ripple': $cornflower-blue,
+    'disabled': $bombay,
+  ),
+  'checkbox-secondary': (
+    'base': transparent,
+    'border': $cornflower-blue,
+    'checked-background': $ship-cove,
+    'checked-border': $ship-cove,
+    'check': $white,
+    'text': $black-pearl,
+    'ripple': $ship-cove,
+    'disabled': $bombay,
+  ),
+  'size-picker': (
+    'base': rgba($forest-green, .8),
+    'hover': $forest-green,
+    'fill': $forest-green,
+    'fill-hover': $forest-green,
+  ),
+  // *********************************
+  // *         Custom Theme          *
+  // *********************************
+  'login': (
+    'base': rgba($nobel, .3),
+    'text': $whisper,
+  ),
+  'layout': (
+    'background-primary': $blackcurrant,
+    'background-secondary': $blackcurrant,
+  ),
+  'main-header': (
+    'base': $charcoal,
+    'text': $gainsboro,
+    'hover': rgba($white, .2),
+    'hover-active': $green
+  ),
+  'main-sidebar': (
+    'background-primary': rgba($lavender, .08),
+    'background-secondary': rgba($lavender-blue, .36),
+    'dragbar': rgba($ship-cove, .3),
+  ),
+  'sub-header': (
+    'shadow': rgba($sapphire, .3),
+    'gradient-from': rgba($lavender-blue-25, .15),
+    'gradient-to': rgba($light-slate-blue, .15),
+    'text-primary': $light-slate-blue,
+    'text-secondary': $ship-cove,
+  ),
+  'filter-bar': (
+    'background': rgba($paua, .9),
+    'shadow': rgba($sapphire, .4),
+    'text': $ship-cove,
+    'text-query': $light-slate-blue,
+  ),
+  'switch-buttons': (
+    'text': $light-slate-blue,
+    'text-active': $white,
+    'background-active': $light-slate-blue,
+    'background-inactive': transparent,
+    'border-active': $light-slate-blue,
+    'border-inactive': $light-slate-blue,
+  ),
+  'grid-pagination': (
+    'text': $white,
+    'arrow': $light-slate-blue,
+    'dropdown-background': $light-slate-blue,
+    'dropdown-text': $white,
+    'hover-background': $light-slate-blue,
+  ),
+  'menu-component': (
+    'text': $white,
+    'text-hover': $light-slate-blue,
+    'background': rgba($sapphire, .96),
+    'background-hover': rgba($light-slate-blue, .2),
+  ),
+  'search-preview': (
+    'background': $sapphire,
+    'border-left-color': rgba($white, .8),
+    'text': rgba($white, .8),
+    'shadow': rgba($sapphire, .5),
+  ),
+  'search-result-list': (
+    'background': $sapphire,
+    'item-border-color': rgba($light-slate-blue, .4),
+    'item-color': rgba($white, .8),
+    'item-hover-background': rgba($light-slate-blue, .3),
+    'item-hover-color': $white,
+    'button-background': $sapphire,
+    'button-color': rgba($white, .8),
+    'button-border-color':  rgba($white, .8),
+    'button-hover-color': rgba($light-slate-blue, .8),
+    'shadow': rgba($sapphire, .5),
+  ),
+  'search-suggestions': (
+    'background': $sapphire,
+    'text': rgba($white, .8),
+    'shadow': rgba($sapphire, .5),
+  ),
+  'search-box': (
+    'text-secondary': rgba($ship-cove, .8),
+    'background': rgba($ship-cove, .2),
+    'text': rgba($white, .8),
+  ),
+  'snack-bar': (
+    'separator': $white,
+    'text': $white,
+  ),
+  'toaster': (
+    'base': $deep-koamaru,
+  ),
+  'workspace-selector': (
+    'base': rgba($black, .6),
+    'border': rgba($ship-cove, .3),
+    'item-background': rgba($black, .6),
+    'selected-background': $ship-cove,
+    'selected-border': $comet,
+    'selected-text': $white,
+    'action-background-active': rgba($light-slate-blue, $opacity-strong),
+    'action-border-active': $light-sky-blue,
+    'action-text-active': $light-sky-blue,
+  ),
+  'widgets': (
+    'base': rgba($paua, .8),
+    'border': rgba($sapphire, .8),
+    'active': $light-slate-blue,
+    'fullscreen': $paua,
+    'icon': $light-slate-blue,
+    'item-background-active': rgba($light-slate-blue, .15),
+    'item-text': $white,
+    'item-text-active': $light-slate-blue,
+    'shadow': rgba($sapphire, .8),
+    'title': $ship-cove,
+  ),
+  'history': (
+    'base': rgba($paua, .4),
+    'timeline': $white,
+  ),
+  'grid': (
+    'base': rgba($charcoal, .9),
+    'header': $green,
+    'header-text': $white,
+    'text': $white,
+    'odd-row': rgba($charcoal, .08),
+    'selected': rgba($charcoal, .4),
+    'border': rgba($white, .2),
+  ),
+  'shadow': (
+    'base': rgba($sapphire, .6),
+  ),
+  'side-bar': (
+    'base': rgba($sapphire, .98),
+    'text': $white,
+    'shadow': -$size-2xs $size-5xs $size-2xs $size-4xs rgba($sapphire, $opacity-weak),
+    'header-background': rgba($rich-blue, .9),
+    'header-text': $white,
+    'item-background-active': rgba($charcoal, .3),
+    'item-icon-active': $light-slate-blue,
+    'quick-filter-background': $paua,
+    'active': $limegreen,
+    'filter-input-bg': $paua,
+    'filter-input-border': $white,
+    'filter-input-text': $white,
+  ),
+  'workbench': (
+    'header': linear-gradient(0deg, rgba(188, 192, 253, .07) 0%, rgba($light-slate-blue, .1) 100%),
+    'action-shadow': rgba($sapphire, .07),
+    'action-icon': $light-slate-blue,
+    'action-icon-selected': $light-sky-blue,
+    'action-icon-hover': rgba($white, .9),
+    'action-icons-text': $light-slate-blue,
+    'action-icons-text-selected': $light-sky-blue,
+    'action-icons-text-hover': rgba($white, .9),
+    'action-selected-top': $light-sky-blue,
+    'action-selected-bottom': transparent,
+    'action-selected-background': linear-gradient(0deg, rgba(188, 192, 253, .07) 0%, rgba($light-slate-blue, .1) 100%),
+    'action-hover-background': transparent,
+    'action-divider': rgba($sapphire, .6),
+  ),
+  'health-sparkline': (
+    'base': $cornflower-blue,
+    'marker': $white,
+  ),
+);
+
+@include define-theme($theme-dark, 'dark');

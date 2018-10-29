@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@kleeen/style/base/reset';
+@import './scss/themes/light';
+@import './scss/themes/dark';
+@import './scss/base/typography';
+
+html {
+  font-size: 62.5%;
+}
