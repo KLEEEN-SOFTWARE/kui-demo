@@ -1,0 +1,11 @@
+@import '../../scss/helpers';
+
+header {
+    background-color: theme-color('dashboard-header');
+    padding: 1rem;
+
+    kui-button {
+        padding-left: 1rem;
+        display: inline-flex;
+    }
+}

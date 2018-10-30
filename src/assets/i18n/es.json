@@ -6,5 +6,12 @@
     "SPANISH": "Español",
     "DARK": "Oscuro",
     "LIGHT": "Claro"
+  },
+  "DASHBOARD": {
+    "ADD": "Añadir Tarjeta | Consumo Energético",
+    "CARD": "Consumo Energético",
+    "SYNC": "Sincronizar Tarjetas",
+    "REFRESH": "Recargar Tarjetas",
+    "DELETE": "Eliminar Tarjetas"
   }
 }

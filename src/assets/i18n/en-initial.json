@@ -6,5 +6,12 @@
     "SPANISH": "Spanish",
     "DARK": "Dark",
     "LIGHT": "Light"
+  },
+  "DASHBOARD": {
+    "ADD": "Add Card | Energy Consumption",
+    "CARD": "Total Energy Consumption",
+    "SYNC": "Sync Cards",
+    "REFRESH": "Refresh Cards",
+    "DELETE": "Delete Cards"
   }
 }

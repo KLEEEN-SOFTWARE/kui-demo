@@ -7,10 +7,11 @@ import { ThemingService, TranslationService } from '@kleeen/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  title = 'Kleeen Software';
   constructor(
     public theming: ThemingService,
-    public translation: TranslationService
-    ) {
+    public translation: TranslationService,
+  ) {
     this.theming.setTheme('dark');
     this.translation.initializeLang('en-initial');
   }

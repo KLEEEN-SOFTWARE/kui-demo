@@ -1,0 +1,11 @@
+<section class="dashboard-demo">
+  <header>
+    <kui-button (click)="addNetHealthCard()">{{'DASHBOARD.ADD' | translate}}</kui-button>
+    <kui-button (click)="syncCards()">{{'DASHBOARD.SYNC' | translate}}</kui-button>
+    <kui-button (click)="refreshCards()">{{'DASHBOARD.REFRESH' | translate}}</kui-button>
+    <kui-button (click)="deleteAllCards()">{{'DASHBOARD.DELETE' | translate}}</kui-button>
+    <kui-button (click)="setMasonryType()">Masonry</kui-button>
+    <kui-button (click)="setGridType()">Grid</kui-button>
+  </header>
+  <kui-dashboard #dashboard></kui-dashboard>
+</section>

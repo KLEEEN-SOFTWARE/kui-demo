@@ -1,13 +1,13 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { DashboardComponent, KuiCardState } from '@kleeen/dashboard';
 import { NetHealthCardComponent } from '../net-health-card/net-health-card.component';
 
 @Component({
-  selector: 'app-dashboard',
-  templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.scss']
+  selector: 'app-app-dashboard',
+  templateUrl: './app-dashboard.component.html',
+  styleUrls: ['./app-dashboard.component.scss']
 })
-export class AppDashboardComponent {
+export class AppDashboardComponent implements OnInit {
 
   @ViewChild('dashboard') kuiDashboardApi: DashboardComponent;
 
@@ -37,6 +37,10 @@ export class AppDashboardComponent {
 
   public setGridType = () => {
     this.kuiDashboardApi.setGridType();
+  }
+  constructor() { }
+
+  ngOnInit() {
   }
 
 }

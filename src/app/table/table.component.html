@@ -1,6 +1,14 @@
+<header>
+  <kui-button (click)="onRemoveSelected()">Remove Selected</kui-button>
+  <kui-button (click)="onSelectAll()">Select All</kui-button>
+  <kui-button (click)="onClearAll()">Clear All</kui-button>
+  <kui-button (click)="onShowSelected()">Show Only Selected</kui-button>
+</header>
 <kui-table
-    [id]="demoTable"
+    [id]="tableName"
     [columns]="columns | async"
     [rows]="rows | async"
     [quickFilterConfig]="quickFilterConfig"
+    [headerFilter]="onHeaderFilter"
+    [rowToggle]="onToggle"
   ></kui-table>

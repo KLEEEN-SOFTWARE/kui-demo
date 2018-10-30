@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreModule } from '@ngrx/store';
+import { HttpClientModule } from '@angular/common/http';
 
 import { CoreModule } from '@kleeen/core';
 import { ComponentsModule, TableModule } from '@kleeen/components';
@@ -12,10 +13,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { TableComponent } from './table/table.component';
-import { AppDashboardComponent } from './dashboard/dashboard.component';
+import { AppDashboardComponent } from './app-dashboard/app-dashboard.component';
 import { NetHealthCardComponent } from './net-health-card/net-health-card.component';
-import iconRegistry from '../assets/icons/iconRegistry'
-import { HttpClientModule } from '@angular/common/http';
+import iconRegistry from '../assets/icons/iconRegistry';
 
 @NgModule({
   declarations: [
@@ -23,11 +23,14 @@ import { HttpClientModule } from '@angular/common/http';
     NavbarComponent,
     TableComponent,
     AppDashboardComponent,
-    NetHealthCardComponent
+    NetHealthCardComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
+    EffectsModule.forRoot([]),
+    StoreModule.forRoot({}),
     CoreModule.forRoot({
       iconRegistry,
     }),
@@ -36,12 +39,9 @@ import { HttpClientModule } from '@angular/common/http';
     VisualizationsModule,
     DashboardModule,
     TableModule,
-    HttpClientModule,
-    EffectsModule.forRoot([]),
-    StoreModule.forRoot({}),
   ],
   entryComponents: [
-    NetHealthCardComponent,
+    NetHealthCardComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
