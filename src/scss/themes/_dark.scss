@@ -126,9 +126,9 @@ $theme-dark: (
   ),
   'menu-component': (
     'text': $white,
-    'text-hover': $light-aqua,
+    'text-hover': $white-smoke,
     'background': rgba($header-background, .8),
-    'background-hover': rgba($light-aqua, .2),
+    'background-hover': rgba($tag-bg, .6),
   ),
   'search-preview': (
     'background': $header-background,
@@ -154,8 +154,8 @@ $theme-dark: (
     'shadow': rgba($header-background, .5),
   ),
   'search-box': (
-    'text-secondary': rgba($ship-cove, .8),
-    'background': rgba($ship-cove, .2),
+    'text-secondary': rgba($btn-background, .8),
+    'background': rgba($btn-background, .2),
     'text': rgba($white, .8),
   ),
   'snack-bar': (

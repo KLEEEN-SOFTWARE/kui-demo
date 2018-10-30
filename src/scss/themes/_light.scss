@@ -180,13 +180,13 @@ $theme-light: (
   ),
   'search-suggestions': (
     'background': rgba($white, .95),
-    'text': $rich-blue,
+    'text': rgba($charcoal, .95),
     'shadow': rgba($sapphire, .5),
   ),
   'search-box': (
     'background': rgba($white-lilac, .5),
-    'text-secondary': rgba($white, .8),
-    'text': $white,
+    'text-secondary': rgba($charcoal, .8),
+    'text': rgba($charcoal, .95),
   ),
   'snack-bar': (
     'separator': $white,
@@ -229,7 +229,7 @@ $theme-light: (
     'header-text': $white,
     'text': $rock-blue,
     'odd-row': rgba($white-lilac, .5),
-    'selected': rgba($deep-sky-blue, .1),
+    'selected': rgba($endeavour, .2),
     'border': rgba($vulcan, .12),
   ),
   'shadow': (

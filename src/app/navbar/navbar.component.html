@@ -4,6 +4,14 @@
     kuiSize="size-2xl"
     (click)="toggleMenu()"
   ></kui-icon>
+  <div class="search-box">
+      <kui-icon kuiIcon="search"></kui-icon>
+      <input
+        class="search-input"
+        type="search"
+        placeholder="Search"
+      >
+    </div>
   <kui-menu
     *ngIf="isMenuVisible"
     [kuiOptions]="menuOptions"
