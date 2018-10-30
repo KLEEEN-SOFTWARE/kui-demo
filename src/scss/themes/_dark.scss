@@ -190,11 +190,11 @@ $theme-dark: (
   ),
   'grid': (
     'base': rgba($header-background, .9),
-    'header': $light-aqua,
+    'header': $btn-background,
     'header-text': $white,
     'text': $white,
-    'odd-row': rgba($light-aqua, .08),
-    'selected': rgba($light-aqua, .4),
+    'odd-row': rgba($btn-background, .08),
+    'selected': rgba($btn-background, .4),
     'border': rgba($white, .2),
   ),
   'shadow': (
