@@ -23,7 +23,7 @@
     "@angular/router": "~7.0.0",
     "@kleeen/components": "^0.1.8",
     "@kleeen/core": "^0.1.3",
-    "@kleeen/dashboard": "^0.1.4",
+    "@kleeen/dashboard": "^0.1.7",
     "@kleeen/dylo": "^0.1.0",
     "@kleeen/grid": "^0.1.1",
     "@kleeen/style": "0.0.11",

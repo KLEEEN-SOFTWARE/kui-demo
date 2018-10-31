@@ -56,15 +56,33 @@ import { KuiCardTemplate, KuiCardModel } from '@kleeen/dashboard';
   </ng-template>
 
   <ng-template #sheet2>
-    <div>{{'DASHBOARD.CARD' | translate}} sheet 2</div>
+    <div class="title">{{'DASHBOARD.CARD' | translate}}</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    <kui-sparkline
+      [kvConfig]="getSparklineSheetConfig(getSeverity(data[1].value))"
+      [kvData]="data"
+      [kvEvents]="events">
+    </kui-sparkline>
   </ng-template>
 
   <ng-template #sheet3>
-    <div>{{'DASHBOARD.CARD' | translate}} sheet 3</div>
+    <div class="title">{{'DASHBOARD.CARD' | translate}}</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    <kui-sparkline
+      [kvConfig]="getSparklineSheetConfig(getSeverity(data[2].value))"
+      [kvData]="data"
+      [kvEvents]="events">
+    </kui-sparkline>
   </ng-template>
 
   <ng-template #sheet4>
-    <div>{{'DASHBOARD.CARD' | translate}} sheet 4</div>
+    <div class="title">{{'DASHBOARD.CARD' | translate}}</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    <kui-sparkline
+      [kvConfig]="getSparklineSheetConfig(getSeverity(data[3].value))"
+      [kvData]="data"
+      [kvEvents]="events">
+    </kui-sparkline>
   </ng-template>
 
   <ng-template #fullscreen>
@@ -79,28 +97,28 @@ export class NetHealthCardComponent extends KuiCardTemplate {
   public events = [];
   public config: KuiCardModel = {
     card: {
-      title: 'Net Card',
-      description: 'This card is used to monitor the health of a network',
+      title: 'NETHEALTHCARD.TITLE',
+      description: 'NETHEALTHCARD.DESCRIPTION',
     },
     sheets: {
       sheet1: {
-        title: 'Sheet1 title',
-        description: 'Lorem Ipsum sheet1 description',
+        title: 'NETHEALTHCARD.SHEET1.TITLE',
+        description: 'NETHEALTHCARD.SHEET1.DESCRIPTION',
         icon: 'cloud-monitor-upload',
       },
       sheet2: {
-        title: 'Sheet2 title',
-        description: 'Lorem Ipsum sheet2 description',
+        title: 'NETHEALTHCARD.SHEET2.TITLE',
+        description: 'NETHEALTHCARD.SHEET2.DESCRIPTION',
         icon: 'database-connect',
       },
       sheet3: {
-        title: 'Sheet3 title',
-        description: 'Lorem Ipsum sheet3 description',
+        title: 'NETHEALTHCARD.SHEET3.TITLE',
+        description: 'NETHEALTHCARD.SHEET3.DESCRIPTION',
         icon: 'browser-gauge',
       },
       sheet4: {
-        title: 'Sheet4 title',
-        description: 'Lorem Ipsum sheet4 description',
+        title: 'NETHEALTHCARD.SHEET4.TITLE',
+        description: 'NETHEALTHCARD.SHEET4.DESCRIPTION',
         icon: 'login-key',
       },
     },

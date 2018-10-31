@@ -5,7 +5,8 @@
     "ENGLISH": "English",
     "SPANISH": "Spanish",
     "DARK": "Dark",
-    "LIGHT": "Light"
+    "LIGHT": "Light",
+    "SEARCH": "Search"
   },
   "DASHBOARD": {
     "ADD": "Add Card | Energy Consumption",
@@ -13,5 +14,31 @@
     "SYNC": "Sync Cards",
     "REFRESH": "Refresh Cards",
     "DELETE": "Delete Cards"
+  },
+  "TABLE": {
+    "REMOVE_SELECTED": "Remove Selected",
+    "SELECT_ALL": "Select All",
+    "CLEAR_ALL": "Clear All",
+    "SHOW_ONLY_SELECTED": "Show Only Selected"
+  },
+  "NETHEALTHCARD": {
+    "TITLE": "Energy Consumption Card",
+    "DESCRIPTION": "This card is used to monitor the energy consumption",
+    "SHEET1": {
+      "TITLE": "Total Energy Consumption 1",
+      "DESCRIPTION": "Total Energy Consumption desc 1"
+    },
+    "SHEET2": {
+      "TITLE": "Total Energy Consumption 2",
+      "DESCRIPTION": "Total Energy Consumption desc 2"
+    },
+    "SHEET3": {
+      "TITLE": "Total Energy Consumption 3",
+      "DESCRIPTION": "Total Energy Consumption desc 3"
+    },
+    "SHEET4": {
+      "TITLE": "Total Energy Consumption 4",
+      "DESCRIPTION": "Total Energy Consumption desc 4"
+    }
   }
 }

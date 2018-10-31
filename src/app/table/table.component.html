@@ -1,8 +1,8 @@
 <header>
-  <kui-button (click)="onRemoveSelected()">Remove Selected</kui-button>
-  <kui-button (click)="onSelectAll()">Select All</kui-button>
-  <kui-button (click)="onClearAll()">Clear All</kui-button>
-  <kui-button (click)="onShowSelected()">Show Only Selected</kui-button>
+  <kui-button (click)="onRemoveSelected()">{{'TABLE.REMOVE_SELECTED' | translate}}</kui-button>
+  <kui-button (click)="onSelectAll()">{{'TABLE.SELECT_ALL' | translate}}</kui-button>
+  <kui-button (click)="onClearAll()">{{'TABLE.CLEAR_ALL' | translate}}</kui-button>
+  <kui-button (click)="onShowSelected()">{{'TABLE.SHOW_ONLY_SELECTED' | translate}}</kui-button>
 </header>
 <kui-table
     [id]="tableName"

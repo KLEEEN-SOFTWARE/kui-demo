@@ -5,7 +5,8 @@
     "ENGLISH": "Ingles",
     "SPANISH": "Español",
     "DARK": "Oscuro",
-    "LIGHT": "Claro"
+    "LIGHT": "Claro",
+    "SEARCH": "Búsqueda"
   },
   "DASHBOARD": {
     "ADD": "Añadir Tarjeta | Consumo Energético",
@@ -13,5 +14,31 @@
     "SYNC": "Sincronizar Tarjetas",
     "REFRESH": "Recargar Tarjetas",
     "DELETE": "Eliminar Tarjetas"
+  },
+  "TABLE": {
+    "REMOVE_SELECTED": "Eliminar seleccionados",
+    "SELECT_ALL": "Seleccionar Todos",
+    "CLEAR_ALL": "Limpiar Todo",
+    "SHOW_ONLY_SELECTED": "Mostrar solo Seleccionados"
+  },
+  "NETHEALTHCARD": {
+    "TITLE": "Tarjeta Consumo Energético",
+    "DESCRIPTION": "Esta tarjeta es usada para monitorear el consumo energético",
+    "SHEET1": {
+      "TITLE": "Consumo Total de Energía 1",
+      "DESCRIPTION": "Tarjeta de consumo total de energía 1"
+    },
+    "SHEET2": {
+      "TITLE": "Consumo Total de Energía 2",
+      "DESCRIPTION": "Tarjeta de consumo total de energía 2"
+    },
+    "SHEET3": {
+      "TITLE": "Consumo Total de Energía 3",
+      "DESCRIPTION": "Tarjeta de consumo total de energía 3"
+    },
+    "SHEET4": {
+      "TITLE": "Consumo Total de Energía 4",
+      "DESCRIPTION": "Tarjeta de consumo total de energía 4"
+    }
   }
 }
